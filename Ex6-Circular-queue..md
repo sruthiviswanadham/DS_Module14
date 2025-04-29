@@ -16,7 +16,7 @@ operation ((front + 1) % SIZE).
 ## Program:
 ```
 Program to delete three elements from the filled circular queue
-Developed by: V si sruthi
+Developed by: V sai sruthi
 RegisterNumber: 212223100061
 
  
