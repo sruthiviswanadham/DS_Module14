@@ -1,42 +1,52 @@
-# Ex 2B Priority Queue
-## DATE: 5-3-2025
+# Ex 2C Deque
+## DATE: 7-3-2025
 ## AIM:
-To formulate the C code to display the elements of the priority queue after insertion and deletion operation.
+To write a C function to count the number of elements present in the deque.
 
 ## Algorithm
 1. Start 
-2. Define a function printArray() that takes an array and its size as parameters. 
-3. Loop through the array from index 0 to size-1. 
-4. Print each element of the array during the loop. 
-5. After printing all elements, print a newline for formatting. 
-6. End
+2. Define a function count() that takes an array arr as input. 
+3. Initialize a counter c to track the number of non-zero elements. 
+4. Loop through the array from index 0 to MAX-1. 
+5. For each element, check if it's non-zero. 
+6. If the element is non-zero, increment the counter c. 
+7. Return the final count of non-zero elements in the array. 
+8. End 
 
 ## Program:
 ```
-Program to o display the elements of the priority queue after insertion and deletion operation.
+Program to count the number of elements present in the deque.
 
 Developed by: V sai sruthi
 RegisterNumber:  212223100061
-
-
 /*#include <stdio.h> 
-int size = 0; 
+#define MAX 10 
+void addFront(int *, int, int *, int *); 
+void addRear(int *, int, int *, int *); 
+int delFront(int *, int *, int *); 
+int delRear(int *, int *, int *); 
+void display(int *); 
+int count(int *); 
 */ 
-void printArray(int array[], int size) 
+int count(int *arr) { 
+int c = 0, i; 
+for(i=0;i<MAX;i++) 
 { 
-int i; 
-for(i=0;i<size;i++) 
+if(arr[i]!=0) 
 { 
-printf("%d ",array[i]); 
+c=c+1; 
 } 
-printf("\n"); 
-}
+} 
+return c; 
+} 
+
+
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/fad35dff-4ed6-44f7-94e0-27d489cf031e)
+![image](https://github.com/user-attachments/assets/aea5bd1c-c8dc-4163-898b-b07f9f82a680)
 
 
 ## Result:
-Thus, the C program to display the elements of the priority queue after insertion and deletion operation is implemented successfully
+Thus, the C code to count the number of elements present in the deque is implemented successfully.
